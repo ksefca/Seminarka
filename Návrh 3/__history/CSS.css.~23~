@@ -1,0 +1,225 @@
+/* CSS Document */
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    float:left;
+    z-index: 1;
+    top: 40%;
+    left: 0%;
+    background-color: #111;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+.main {
+    margin-left: 200px; 
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.prava  {
+  position: fixed;
+  width: 100%;
+  height: 3%;
+  z-index: 15;
+  top: 37%;
+  background: #00FF00;
+  
+
+
+} 
+
+.hledbox {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 347px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+.column-content {
+    float: right;
+    width: 79%;
+    height: 100%;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+.tile {
+    float: left;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+    .title a {
+    float: top;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    .tile img {
+        max-width: 80%;
+        margin: 2%;
+    }
+
+
+@media screen and (max-width: 1000px) {
+    .sidenav {width: 29%;}
+    .column-content {width: 68%;}
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav {width: 39%;}
+    .sidenav a {font-size: 14px;}
+    .column-content {width: 58%;}
+    .tile {width: 45%;}
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {width: 100%;}
+    .sidenav a {font-size: 14px;}
+    .column-content {width: 100%;}
+    .tile {width: 100%;}
+}
+
